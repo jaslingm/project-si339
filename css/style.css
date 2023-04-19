@@ -1,0 +1,457 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.skip a {
+    position: absolute;
+    background-color: #fff;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    border: 2px solid #000;
+    z-index: 1;
+    top: -40px; 
+    color: black;
+  }
+  
+  /*A selector property to position the skip class element when it is in focus*/
+  .skip a:focus {
+    top: 20px;
+  }
+ 
+body{
+    background-color: black;
+    margin: 0 auto;
+    width: 100%;
+}
+
+li, a {
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    font-family: Arial;
+    margin: 0 auto;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ 
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a:hover{
+    border:1px solid black;  
+    font-weight: 900;
+}
+
+.logo {
+    font-size: 27px;
+    font-family: 'Times New Roman';
+    color: black;
+    padding: 0px 0px 0px 25px;
+}
+
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.container h2 {
+    font-size: 45px;
+    font-family:'Cabin', arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+footer p {
+    font-size: 17px;
+    font-family:'Cabin', arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+ .dropdownlinks {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+.dropdownlinks a {
+    padding: 10px 0 0 0;
+    width: 100px;
+    color: black;
+    display: block;
+}
+  
+.dropdownlinks a:hover {
+    background-color: #ddd;
+} /*change color*/
+    
+.dropdown:hover .dropdownlinks {
+    display: block;
+}
+  
+footer p {
+    padding-top: 25px;
+}
+/*mobile view index styling*/
+ .bb{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 25px;
+ }
+
+ .bb img{
+    padding: 20px;
+    background-color: white;
+ }
+
+.overview p{
+    font-size: 17px;
+    display: grid;
+    padding: 20px;
+    color: white;
+    justify-items: center;
+}
+
+.overview {
+    width: auto;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+
+/*mobile view gallery styling*/
+.toverview{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+ }
+
+ .toverview img{  
+    height: 55%;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+ }
+
+ .goverview{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 25px;
+ }
+
+ .goverview img{  
+    height: 55%;
+    width: 55%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+ }
+
+p a {
+    font-size: 40px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+p a:link {
+    color: white;
+  }
+  
+p a:visited {
+    color: rgb(56, 159, 255);
+  }
+  
+p a:hover {
+    color: white;
+  }
+  
+p a:active {
+    color: white;
+  }
+
+
+.container h3 {
+    font-size: 25px;
+    font-family:'Cabin', arial, sans-serif;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 8px;
+ }
+
+.galleryoverview p{
+    font-size: 17px;
+    display: grid;
+    padding: 20px;
+    color: white;
+    justify-items: center;
+}
+
+.galleryoverview {
+    width: auto;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+/* mobile styling for foods page*/
+.hispanic_food {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+ .hispanic_food img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+ }
+
+ .asian_food {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+.asian_food img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+}
+.foodsoverview p{
+    font-size: 17px;
+    display: grid;
+    padding: 20px;
+    color: white;
+    justify-items: center;
+}
+
+.foodsoverview {
+    width: auto;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+
+ /* mobile styling for travels page*/
+.travelsoverview p{
+    font-size: 17px;
+    display: grid;
+    padding: 20px;
+    color: white;
+    justify-items: center;
+}
+
+.travelsoverview {
+    width: auto;
+    border: 10px solid white;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.city {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+.city img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+}
+
+ .beach {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+ .beach img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+ }
+
+ .rimg {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+ .rimg img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+ }
+
+ /* mobile styling for accessories page*/
+ .brother {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+ .brother img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+ }
+
+ .dog {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0px;
+ }
+
+ .dog img{
+     height: 100%;
+     width: 100%;
+     margin: 0 auto;
+     object-fit: cover;
+ }
+
+@media screen and (min-width: 600px) { 
+    /* styling for index page */
+    .bb{
+        margin: 0 auto;
+        display: grid;
+        justify-content: space-evenly;
+        padding: 20px;
+        grid-gap: 20px;
+        grid-template-columns: 330px 330px;
+        border-radius: 25px;
+     }
+    
+    .bb img{
+        padding: 20px;
+        background-color: white;
+        width: auto;
+        height: auto;
+     }
+}
+
+@media screen and (min-width: 992px) {
+/* styling for all pages*/
+li, a {
+    padding: 20 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 25px 25px 25px;
+}
+
+.logo {
+    padding: 0px 0px 0px 25px;
+}
+
+.dropdownlinks a {
+color: black;
+display: block;
+padding: 16px 0 0 0;
+width: 150px;
+}
+
+/*index styling*/
+.bb{
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-columns: 330px 330px;
+    border-radius: 25px;
+ }
+
+ .bb img{
+    padding: 20px;
+    background-color: white;
+    width: auto;
+    height: auto;
+ }
+
+p a {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.toverview img{  
+    height: auto;
+    width: 30%;
+ }
+
+ .goverview img{  
+    height: auto;
+    width: 30%;
+ }
+
+}
